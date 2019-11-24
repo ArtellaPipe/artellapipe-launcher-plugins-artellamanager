@@ -1,0 +1,17 @@
+artellapipe.launcher.plugins.artellamanager package
+===================================================
+
+Submodules
+----------
+
+.. toctree::
+
+   artellapipe.launcher.plugins.artellamanager.artellamanager
+
+Module contents
+---------------
+
+.. automodule:: artellapipe.launcher.plugins.artellamanager
+   :members:
+   :undoc-members:
+   :show-inheritance:
