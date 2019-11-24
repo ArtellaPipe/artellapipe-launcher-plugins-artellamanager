@@ -50,4 +50,3 @@ class ArtellaManager(plugin.ArtellaLauncherPlugin, object):
         artella_manager_tool = artellamanager.ArtellaManagerWidget(project=self._project)
 
         self.main_layout.addWidget(artella_manager_tool)
-
