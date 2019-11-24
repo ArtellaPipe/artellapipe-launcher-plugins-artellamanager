@@ -1,0 +1,16 @@
+# ===================================================================
+# artellapipe-launcher-plugins-artellamanager requirements file
+# ===================================================================
+Qt.py
+pytest
+pytest-cov
+coveralls
+sphinx
+sphinx_rtd_theme
+python-json-logger
+sentry-sdk
+tpPyUtils
+tpQtLib
+artellapipe
+artellapipe-launcher
+artellapipe-tools-artellamanager
