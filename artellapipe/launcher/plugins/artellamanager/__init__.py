@@ -17,7 +17,7 @@ import inspect
 import logging.config
 
 
-def init(do_reload=False):
+def init(do_reload=False, dev=False):
     """
     Initializes module
     :param do_reload: bool, Whether to reload modules or not
@@ -25,17 +25,18 @@ def init(do_reload=False):
 
     logging.config.fileConfig(get_logging_config(), disable_existing_loggers=False)
 
-    import sentry_sdk
-    try:
-        sentry_sdk.init("https://80e52f34344c4dcab363dd767db14398@sentry.io/1832267")
-    except RuntimeError:
-        sentry_sdk.init("https://80e52f34344c4dcab363dd767db14398@sentry.io/1832267", default_integrations=False)
+    if not dev:
+        import sentry_sdk
+        try:
+            sentry_sdk.init("https://80e52f34344c4dcab363dd767db14398@sentry.io/1832267")
+        except RuntimeError:
+            sentry_sdk.init("https://80e52f34344c4dcab363dd767db14398@sentry.io/1832267", default_integrations=False)
 
     from tpPyUtils import importer
 
     class ArtellaManagerPlugin(importer.Importer, object):
-        def __init__(self):
-            super(ArtellaManagerPlugin, self).__init__(module_name='artellapipe.launcher.plugins.artellamanager')
+        def __init__(self, debug=False):
+            super(ArtellaManagerPlugin, self).__init__(module_name='artellapipe.launcher.plugins.artellamanager', debug=debug)
 
         def get_module_path(self):
             """
@@ -59,7 +60,7 @@ def init(do_reload=False):
 
     packages_order = []
 
-    artellamanager_importer = importer.init_importer(importer_class=ArtellaManagerPlugin, do_reload=False)
+    artellamanager_importer = importer.init_importer(importer_class=ArtellaManagerPlugin, do_reload=False, debug=dev)
     artellamanager_importer.import_packages(order=packages_order, only_packages=False)
     if do_reload:
         artellamanager_importer.reload_all()
