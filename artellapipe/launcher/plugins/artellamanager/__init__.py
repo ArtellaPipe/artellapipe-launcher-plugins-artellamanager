@@ -36,7 +36,8 @@ def init(do_reload=False, dev=False):
 
     class ArtellaManagerPlugin(importer.Importer, object):
         def __init__(self, debug=False):
-            super(ArtellaManagerPlugin, self).__init__(module_name='artellapipe.launcher.plugins.artellamanager', debug=debug)
+            super(ArtellaManagerPlugin, self).__init__(
+                module_name='artellapipe.launcher.plugins.artellamanager', debug=debug)
 
         def get_module_path(self):
             """
