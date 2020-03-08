@@ -19,7 +19,7 @@ from Qt.QtCore import *
 from Qt.QtWidgets import *
 
 from artellapipe.launcher.core import plugin
-from artellapipe.tools.artellamanager.core import artellamanager
+from artellapipe.tools.artellamanager.widgets import artellamanagerwidget
 
 LOGGER = logging.getLogger()
 
@@ -47,6 +47,6 @@ class ArtellaManager(plugin.ArtellaLauncherPlugin, object):
     def ui(self):
         super(ArtellaManager, self).ui()
 
-        artella_manager_tool = artellamanager.ArtellaManagerWidget(project=self._project)
+        artella_manager_tool = artellamanagerwidget.ArtellaManagerWidget(project=self._project)
 
         self.main_layout.addWidget(artella_manager_tool)
