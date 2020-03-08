@@ -1,0 +1,7 @@
+artellapipe.launcher.plugins.artellamanager.register module
+===========================================================
+
+.. automodule:: artellapipe.launcher.plugins.artellamanager.register
+   :members:
+   :undoc-members:
+   :show-inheritance:

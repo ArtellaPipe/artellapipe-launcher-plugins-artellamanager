@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>artellapipe.launcher.plugins.artellamanager.artellamanager module &mdash; artellapipe-core 0.0.l documentation</title>
+  <title>artellapipe.launcher.plugins.artellamanager.loader module &mdash; artellapipe-core 0.0.l documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="artellapipe.launcher.plugins.artellamanager.loader module" href="artellapipe.launcher.plugins.artellamanager.loader.html" />
-    <link rel="prev" title="artellapipe.launcher.plugins.artellamanager package" href="artellapipe.launcher.plugins.artellamanager.html" /> 
+    <link rel="next" title="artellapipe.launcher.plugins.artellamanager.register module" href="artellapipe.launcher.plugins.artellamanager.register.html" />
+    <link rel="prev" title="artellapipe.launcher.plugins.artellamanager.artellamanager module" href="artellapipe.launcher.plugins.artellamanager.artellamanager.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -152,13 +152,13 @@
         
           <li><a href="artellapipe.launcher.plugins.artellamanager.html">artellapipe.launcher.plugins.artellamanager package</a> &raquo;</li>
         
-      <li>artellapipe.launcher.plugins.artellamanager.artellamanager module</li>
+      <li>artellapipe.launcher.plugins.artellamanager.loader module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/artellapipe.launcher.plugins.artellamanager.artellamanager.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/artellapipe.launcher.plugins.artellamanager.loader.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -172,8 +172,48 @@
 
            <div itemprop="articleBody">
             
-  <div class="section" id="artellapipe-launcher-plugins-artellamanager-artellamanager-module">
-<h1>artellapipe.launcher.plugins.artellamanager.artellamanager module<a class="headerlink" href="#artellapipe-launcher-plugins-artellamanager-artellamanager-module" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-artellapipe.launcher.plugins.artellamanager.loader">
+<span id="artellapipe-launcher-plugins-artellamanager-loader-module"></span><h1>artellapipe.launcher.plugins.artellamanager.loader module<a class="headerlink" href="#module-artellapipe.launcher.plugins.artellamanager.loader" title="Permalink to this headline">¶</a></h1>
+<p>Initialization module for artellapipe-launcher-plugins-artellamanager</p>
+<dl class="function">
+<dt id="artellapipe.launcher.plugins.artellamanager.loader.create_logger">
+<code class="sig-prename descclassname">artellapipe.launcher.plugins.artellamanager.loader.</code><code class="sig-name descname">create_logger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.launcher.plugins.artellamanager.loader.create_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns logger of current module</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="artellapipe.launcher.plugins.artellamanager.loader.create_logger_directory">
+<code class="sig-prename descclassname">artellapipe.launcher.plugins.artellamanager.loader.</code><code class="sig-name descname">create_logger_directory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.launcher.plugins.artellamanager.loader.create_logger_directory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates artellapipe logger directory</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="artellapipe.launcher.plugins.artellamanager.loader.get_logging_config">
+<code class="sig-prename descclassname">artellapipe.launcher.plugins.artellamanager.loader.</code><code class="sig-name descname">get_logging_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.launcher.plugins.artellamanager.loader.get_logging_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns logging configuration file path
+:return: str</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="artellapipe.launcher.plugins.artellamanager.loader.get_logging_level">
+<code class="sig-prename descclassname">artellapipe.launcher.plugins.artellamanager.loader.</code><code class="sig-name descname">get_logging_level</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.launcher.plugins.artellamanager.loader.get_logging_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns logging level to use
+:return: str</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="artellapipe.launcher.plugins.artellamanager.loader.init">
+<code class="sig-prename descclassname">artellapipe.launcher.plugins.artellamanager.loader.</code><code class="sig-name descname">init</code><span class="sig-paren">(</span><em class="sig-param">do_reload=False</em>, <em class="sig-param">dev=False</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.launcher.plugins.artellamanager.loader.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes module
+:param do_reload: bool, Whether to reload modules or not</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="artellapipe.launcher.plugins.artellamanager.loader.register_resources">
+<code class="sig-prename descclassname">artellapipe.launcher.plugins.artellamanager.loader.</code><code class="sig-name descname">register_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.launcher.plugins.artellamanager.loader.register_resources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers artellapipe-launcher-plugins-artellamanager resources</p>
+</dd></dl>
+
 </div>
 
 
@@ -188,10 +228,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="artellapipe.launcher.plugins.artellamanager.loader.html" class="btn btn-neutral float-right" title="artellapipe.launcher.plugins.artellamanager.loader module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="artellapipe.launcher.plugins.artellamanager.register.html" class="btn btn-neutral float-right" title="artellapipe.launcher.plugins.artellamanager.register module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="artellapipe.launcher.plugins.artellamanager.html" class="btn btn-neutral float-left" title="artellapipe.launcher.plugins.artellamanager package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="artellapipe.launcher.plugins.artellamanager.artellamanager.html" class="btn btn-neutral float-left" title="artellapipe.launcher.plugins.artellamanager.artellamanager module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

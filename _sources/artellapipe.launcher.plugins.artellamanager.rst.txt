@@ -7,6 +7,8 @@ Submodules
 .. toctree::
 
    artellapipe.launcher.plugins.artellamanager.artellamanager
+   artellapipe.launcher.plugins.artellamanager.loader
+   artellapipe.launcher.plugins.artellamanager.register
 
 Module contents
 ---------------
