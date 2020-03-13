@@ -1,2 +1,2 @@
 include artellapipe/launcher/plugins/artellamanager/__logging__.ini
-include artellapipe/launcher/plugins/artellamanager/resources/icons/color/*.*
+recursive-include artellapipe/launcher/plugins/artellamanager/resources/* *.*
