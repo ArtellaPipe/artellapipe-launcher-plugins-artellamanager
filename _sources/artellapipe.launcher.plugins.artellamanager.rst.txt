@@ -5,6 +5,7 @@ Submodules
 ----------
 
 .. toctree::
+   :maxdepth: 4
 
    artellapipe.launcher.plugins.artellamanager.artellamanager
    artellapipe.launcher.plugins.artellamanager.loader
