@@ -1,9 +1,6 @@
 # ===================================================================
 # artellapipe-launcher-plugins-artellamanager requirements file
 # ===================================================================
-Qt.py
-python-json-logger
-sentry-sdk
 tpDcc-libs-python
 tpDcc-core
 tpDcc-libs-qt
